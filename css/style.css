@@ -32,9 +32,8 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
 
 :root{
     --color-default: #000;
-    --color-primary: #fff;
-    --color-heder: rgb(0, 0, 200);
-    
+    --color-primary: #fff;   
+    --color-nav: #ccc;
 }
 header{
     padding: 20rem;
@@ -46,4 +45,20 @@ header{
 header h1{
     text-align: center;
     color: var(--color-primary);
+}
+nav ul {
+    border: 0;
+    font-size: 0;
+    background-color: var(--color-nav);
+}
+nav ul li{
+    display: inline-block;
+    width: calc(100% / 5 - .1rem);
+    line-height: 4.5rem;
+    font-size: 1.6rem;
+    border-right: .1rem #ccc transparent;
+    text-align: center;
+}
+nav ul li:hover{
+    background-color: rgb(88, 87, 87);
 }
