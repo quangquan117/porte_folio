@@ -34,6 +34,7 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
     --color-default: #000;
     --color-primary: #fff;   
     --color-nav: #ccc;
+    --color-section: rgb(61, 61, 61);
 }
 header{
     padding: 20rem;
@@ -53,7 +54,7 @@ nav ul {
 }
 nav ul li{
     display: inline-block;
-    width: calc(100% / 5 - .1rem);
+    width: calc(100% / 5 - .01rem);
     line-height: 4.5rem;
     font-size: 1.6rem;
     border-right: .1rem #ccc transparent;
@@ -61,4 +62,24 @@ nav ul li{
 }
 nav ul li:hover{
     background-color: rgb(88, 87, 87);
+}
+main section{
+    max-width: 80rem;
+    margin: 4rem auto;
+    text-align: center;
+    background-color: var(--color-nav);
+    border-radius: 2rem 2rem 0 0;
+}
+main section h2{
+    background-color: var(--color-section);
+    color: var(--color-primary);
+    border-radius: 2rem 2rem 0 0;
+}
+#Langage ul li{
+    padding: 2rem 0 2rem;
+    display: inline-block;
+    width: calc(100% / 4 - 1rem);
+    line-height: 4.5rem;
+    font-size: 1.6rem;
+    border-right: .1rem #ccc
 }
