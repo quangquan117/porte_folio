@@ -27,3 +27,23 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
     background-color: #222;
     outline: .1rem solid #333;
 }
+
+/*theme*/
+
+:root{
+    --color-default: #000;
+    --color-primary: #fff;
+    --color-heder: rgb(0, 0, 200);
+    
+}
+header{
+    padding: 20rem;
+    background-color: #000;
+    background-image: url("/asset/Future.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header h1{
+    text-align: center;
+    color: var(--color-primary);
+}
