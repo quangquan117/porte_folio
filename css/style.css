@@ -13,6 +13,11 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
     padding: 0;
     list-style: none;
 }
+a,abbr{
+    text-decoration: none;
+    color: #222;
+    list-style: none;
+}
 
 /* scroll bars */
 *{
@@ -35,17 +40,24 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
     --color-primary: #fff;   
     --color-nav: #ccc;
     --color-section: rgb(61, 61, 61);
+    --color-background: rgb(88, 87, 87);
 }
 header{
-    padding: 20rem;
     background-color: #000;
-    background-image: url("/asset/Future.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+}
+header img{
+    display: block;
+    width: 100%;
 }
 header h1{
-    text-align: center;
     color: var(--color-primary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 nav ul {
     border: 0;
@@ -56,9 +68,14 @@ nav ul li{
     display: inline-block;
     width: calc(100% / 5 - .01rem);
     line-height: 4.5rem;
+    font-family: Arial Black;
     font-size: 1.6rem;
     border-right: .1rem #ccc transparent;
     text-align: center;
+}
+nav ul li a{
+    display: block;
+    width: 100%;
 }
 nav ul li:hover{
     background-color: rgb(88, 87, 87);
@@ -71,9 +88,16 @@ main section{
     border-radius: 2rem 2rem 0 0;
 }
 main section h2{
+    padding-bottom: .5rem;
     background-color: var(--color-section);
     color: var(--color-primary);
     border-radius: 2rem 2rem 0 0;
+}
+main section ul li{
+    text-decoration: underline;
+}
+main section ul li, main section ul p{
+    line-height: 3rem;
 }
 #Langage ul li{
     padding: 2rem 0 2rem;
@@ -82,4 +106,19 @@ main section h2{
     line-height: 4.5rem;
     font-size: 1.6rem;
     border-right: .1rem #ccc
+}
+footer{
+    max-width: 40rem;
+    padding: 1rem 0;
+    background-color: var(--color-nav);
+    text-align: center;
+    line-height: 3rem;
+    margin: 4rem auto 0;
+    border-radius: 2rem 2rem 0 0;
+}
+@media screen and (max-width: 40rem) {
+    #Langage ul li img{
+        width: 5rem;
+        height: 5rem;
+    }
 }
