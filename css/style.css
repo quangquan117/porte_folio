@@ -43,7 +43,7 @@ a,abbr{
     --color-background: rgb(88, 87, 87);
 }
 header{
-    background-color: #000;
+    background-color: var(--color-default);
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
@@ -68,10 +68,13 @@ nav ul li{
     display: inline-block;
     width: calc(100% / 5 - .01rem);
     line-height: 4.5rem;
-    font-family: Arial Black;
+    font-family: Arial var(--color-default);
     font-size: 1.6rem;
-    border-right: .1rem #ccc transparent;
+    border-right: .1rem var(--color-nav) transparent;
     text-align: center;
+}
+ul li img{
+    max-width: 100%;
 }
 nav ul li a{
     display: block;
@@ -99,13 +102,13 @@ main section ul li{
 main section ul li, main section ul p{
     line-height: 3rem;
 }
-#Langage ul li{
+#back-end ul li, #front-end ul li{
     padding: 2rem 0 2rem;
     display: inline-block;
-    width: calc(100% / 4 - 1rem);
+    width: calc(100% / 5 - 1rem);
     line-height: 4.5rem;
     font-size: 1.6rem;
-    border-right: .1rem #ccc
+    border-right: .1rem var(--color-nav)
 }
 footer{
     max-width: 40rem;
