@@ -102,6 +102,21 @@ main section ul li{
 main section ul li, main section ul p{
     line-height: 3rem;
 }
+#web a img{
+    max-width: 10%;
+}
+.cont-btn {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--color-theme-border);
+    box-shadow: 0 1rem 1rem var(--color-theme-write);
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-theme-write);
+}
+.cont-btn li button{
+    font-size: 2rem;
+}
 #back-end ul li, #front-end ul li{
     padding: 2rem 0 2rem;
     display: inline-block;
