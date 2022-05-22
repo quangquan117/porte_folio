@@ -96,6 +96,9 @@ main section h2{
     color: var(--color-primary);
     border-radius: 2rem 2rem 0 0;
 }
+main section li{
+    margin: 1rem;
+}
 main section ul li{
     text-decoration: underline;
 }
