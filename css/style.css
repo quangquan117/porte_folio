@@ -103,7 +103,7 @@ main section ul li, main section ul p{
     line-height: 3rem;
 }
 #web a img{
-    max-width: 10%;
+    max-width: 20%;
 }
 .cont-btn {
     width: 100%;
@@ -116,6 +116,15 @@ main section ul li, main section ul p{
 }
 .cont-btn li button{
     font-size: 2rem;
+}
+.slider img {
+    max-width: 100%;
+    display: none;
+    margin: auto;
+}
+img.active {
+    display: block;
+    animation: fade 0.8s;
 }
 #back-end ul li, #front-end ul li{
     padding: 2rem 0 2rem;
